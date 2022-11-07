@@ -36,3 +36,130 @@
     transform: rotate(360deg);
   }
 }
+
+.letter {
+    display: inline-block;
+    width: 96px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#letters {
+    margin-bottom: 10px;
+    margin-left: -555px;
+    /*background-color: red;*/
+    /*display: inline-block;*/
+    /*float: left;*/
+}
+
+@media screen and (max-width: 1466px) {
+    #letters {
+        margin-bottom: 10px;
+        margin-left: 42px;
+        /*background-color: red;*/
+        display: inline-block;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 866px) {
+    /*#letters {*/
+    /*    visibility: hidden; !* screen is too small *!*/
+    /*}*/
+
+    #letters:after {
+        content: 'screen too smol'
+    }
+}
+
+#flexor {
+    width: 400px;
+}
+
+#wrapper {
+    width: 838px;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+#numbers {
+    width: 30px;
+    float: left;
+    margin-right: 8px;
+}
+
+#canvas-wrapper {
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+
+.number {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 24px;
+    display: block;
+}
+
+#game-recording {
+    margin: auto;
+}
+
+#game-record {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container {
+    /*position: fixed;*/
+    display: inline-block;
+}
+
+#lefteron {
+    display: inline-block;
+    float: left;
+}
+
+#righteron {
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+#game-record-flex {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin-left: 100px;
+    /*background-color: grey;*/
+}
+
+.move-record {
+    width: 160px;
+    text-align: left;
+    padding: 5px 20px;
+    font-size: 30px;
+}
+
+.move-record:active {
+    background-color: aquamarine;
+}
+
+#game-body {
+    /*width: 100%;*/
+    height: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#top-part {
+    text-align: center;
+}
+
+#opening-name {
+    font-size: 20px;
+    width: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
